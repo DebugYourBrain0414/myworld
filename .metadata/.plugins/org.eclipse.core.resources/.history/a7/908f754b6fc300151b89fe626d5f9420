@@ -1,0 +1,14 @@
+package com.myworld.jetty;
+
+public class TestServer {
+	public static void main(String[] args) {
+    Server server = new Server(8080);
+
+    WebAppContext webapp = new WebAppContext();
+    webapp.setResourceBase("src/main/webapp"); (webapp 폴더)
+
+    server.setHandler(webapp);
+    server.start();
+    server.join();
+	}
+}

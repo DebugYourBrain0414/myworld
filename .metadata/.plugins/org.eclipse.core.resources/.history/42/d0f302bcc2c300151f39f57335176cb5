@@ -1,0 +1,17 @@
+package com.myworld.jetty;
+
+public class JettyServer {
+
+	public static void main(String[] args) {
+		Server server = new Server(6060);
+
+    WebAppContext ctx = new WebAppContext();
+    ctx.setResourceBase("src/main/webapp");
+
+    server.setHandler(ctx);
+    server.start();
+    server.join();
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.myworld.controller;
+
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public class HelloController {
+	
+	@RequestMapping("/")
+	public @RequestBody String index() {
+		return "Hello world";
+	}
+}

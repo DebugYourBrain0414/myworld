@@ -1,0 +1,6 @@
+<web-app>
+	<servlet>
+		<servlet-name>mvc-dispatcher</servlet-name>
+		<servlet-class>org.</servlet-class>
+	</servlet>
+</web-app>
